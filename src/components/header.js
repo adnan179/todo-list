@@ -8,7 +8,9 @@ export default function Head({handleStyle}){
   return(
     <div className='header'>
       <div className='github-repo'>
-        <img src={git} alt='github-repo'/>
+        <a href='https://github.com/adnan179/todo-list'>
+          <img src={git} alt='github-repo'/>
+        </a>
       </div>
       <div className='theme-icons'>
         <div className='theme1-icon'

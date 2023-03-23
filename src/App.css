@@ -1,0 +1,255 @@
+/* header styles */
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+}
+.github-repo{
+  display: flex;
+  width: 130px;
+  height: 130px;
+}
+.theme-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.theme1-icon{
+  display: flex;
+  width: 35px;
+  height:35px;
+  border-radius: 100%;
+  
+  margin-right: 10px;
+  border:2px solid;
+  animation: glowing-purple1 1300ms infinite ease-in-out;
+}
+.theme2-icon{
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: whitesmoke;
+  animation: glowing-purple2 1300ms infinite ease-in-out;
+  border:2px solid whitesmoke;
+}
+/* glowing animation for icons */
+@keyframes glowing-purple1 {
+  0% {
+    background-color: black;
+    box-shadow: 0 0 3px rgb(215, 32, 215);
+  }
+  50% {
+    background-color: black;
+    box-shadow: 0 0 15px rgb(215, 32, 215);
+  }
+  100% {
+    background-color: black;
+    box-shadow: 0 0 3px rgb(215, 32, 215);
+  }
+}
+@keyframes glowing-purple2 {
+  0% {
+    background-color: whitesmoke;
+    box-shadow: 0 0 3px rgb(215, 32, 215);
+  }
+  50% {
+    background-color: whitesmoke;
+    box-shadow: 0 0 15px rgb(215, 32, 215);
+  }
+  100% {
+    background-color: whitesmoke;
+    box-shadow: 0 0 3px rgb(215, 32, 215);
+  }
+}
+/* Body color for two themes */
+.theme1{
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(100deg,
+  #0F2027,#203A43,#2C5364);
+}
+.theme2{
+  margin: 0px;
+  padding: 0px;
+  background: #D3CCE3;
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+}
+/* todlist styles */
+.theme1-todolist{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* heading(just do it) */
+.theme1-todolist h1{
+  font-family: 'Work Sans', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 90px!important;
+  font-weight: bold!important;
+}
+.theme2-todolist h1{
+  font-family: 'Work Sans', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 90px!important;
+  font-weight: bold!important;
+}
+/* animation for the heading */
+.theme1-todolist h1{
+  background: linear-gradient(to right, hsl(274, 78%, 27%) 0, hsl(304, 83%, 16%) 10%, hsl(120, 1%, 59%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+/* The Input form */
+.todo-input{
+  width: 550px;
+  height: 45px;
+  border: 3px solid rgb(22, 22, 22);
+  border-radius: 18px;
+  padding-left: 30px;
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  color: black;
+  background-color: transparent;
+  border-right: none;
+  transition: 0.5s;
+}
+.todo-input:hover{
+  border: 2px solid blueviolet;
+}
+
+.todobtn{
+  color: white;
+  background-color: rgb(22, 22, 22);
+  width: 130px;
+  height: 56px;
+  border: 0.5px solid rgb(22, 22, 22);
+  border-radius: 18px;
+  margin-left: -2px;
+  font-size: 23px;
+  margin-left: -50px;
+  border-left: none;
+  font-family: sans-serif;
+  transition: 0.5s;
+}
+.todobtn:hover{
+  cursor: pointer;
+  width: 130px;
+  height: 60px;
+  border: 2px solid blueviolet;
+  
+}
+.todobtn:active{
+  border: 2px solid black;
+}
+.todo-input-e{
+  margin-top: 30px;
+  width: 550px;
+  height: 45px;
+  border: 2px solid rgb(22, 22, 22);
+  border-radius: 18px;
+  padding-left: 30px;
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  color: grey;
+  background-color: transparent;
+}
+
+.updatebtn{
+  color: white;
+  background-color: rgb(22, 22, 22);
+  width: 120px;
+  height: 50px;
+  border: 0.5px solid rgb(22, 22, 22);
+  border-radius: 18px;
+  margin-left: -2px;
+  font-size: 20px;
+  margin-left: -50px;
+}
+.updatebtn:hover{
+  cursor: pointer;
+  width: 130px;
+  height: 52px;
+  border: 2px solid blueviolet;
+}
+
+/* The todo */
+
+.todo-row{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+  height: 50px;
+  border: 3px solid rgb(22, 22, 22);
+  border-radius: 20px;
+  align-items: center;
+
+}
+.complete{
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+.prior{
+  background-color: #f7797d;
+  border: none solid #f7797d;
+}
+.todotxt{
+  color: grey;
+  display: flex;
+  padding-left: 30px;
+  font-size: 25px;
+  flex-direction: flex-start;
+  margin-right: auto;
+  
+}
+.btnrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding-right: 10px;
+  column-gap: 7px;
+}
+.tick,
+.del{
+  display: flex;
+  width: 35px;
+  height: 35px;
+  background-image: linear-gradient(300deg, rgb(79, 8, 105), rgb(36, 30, 32)) ;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  font-size: 20px !important;
+  font-weight: bolder !important;
+  flex-direction: flex-end;
+}
+.tick:hover,
+.del:hover{
+  cursor: pointer;
+  width: 37px;
+  height: 37px;
+  border: 3px solid blueviolet;
+}
+.todotxt:hover{
+  cursor: pointer;
+  font-size: 30px;
+}

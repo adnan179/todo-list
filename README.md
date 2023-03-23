@@ -1,3 +1,8 @@
+Dark Theme
+![image](https://user-images.githubusercontent.com/100411918/227121712-e2cca11d-d735-42ae-8fc0-46bcdc5a5d61.png)
+Light Theme
+![image](https://user-images.githubusercontent.com/100411918/227121851-e2275f35-fe64-42d0-ba64-5e3f80d0395d.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

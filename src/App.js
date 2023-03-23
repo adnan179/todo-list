@@ -12,6 +12,7 @@ function App(){
     <div className={displaystyle? 'theme1':'theme2'}>
       <Head handleStyle={handleStyle}/>
       <TodoList displaystyle/>
+        <div className='theme-div'></div>
     </div>
   )
 }
